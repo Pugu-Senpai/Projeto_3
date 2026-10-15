@@ -1,7 +1,9 @@
-<header>
-  <nav>
-    <a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
-    <a routerLink="/movimentos" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }">Movimentos</a>
-    <a routerLink="/movimentos/novo" routerLinkActive="ativo">Novo movimento</a>
+<header class="cabecalho">
+  <a routerLink="/" class="marca">Gestor de Finanças</a>
+
+  <nav aria-label="Navegação principal">
+    <a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">Dashboard</a>
+    <a routerLink="/movimentos" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">Movimentos</a>
+    <a routerLink="/movimentos/novo" routerLinkActive="ativo" ariaCurrentWhenActive="page">Novo movimento</a>
   </nav>
 </header>
